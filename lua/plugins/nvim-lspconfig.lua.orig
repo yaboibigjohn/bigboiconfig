@@ -16,6 +16,17 @@ local servers = {
       },
     },
   },
+<<<<<<< HEAD
+  markdown_oxide = {
+    capabilities = vim.tbl_deep_extend('force', capabilities, {
+      workspace = {
+        didChangeWatchedFiles = {
+          dynamicRegistration = true,
+        },
+      },
+    }),
+  },
+=======
   -- markdown_oxide = {
   --   capabilities = vim.tbl_deep_extend('force', capabilities, {
   --     workspace = {
@@ -25,6 +36,7 @@ local servers = {
   --     },
   --   }),
   -- },
+>>>>>>> develop
 }
 local ensure_installed = vim.tbl_keys(servers or {})
 vim.list_extend(ensure_installed, {
@@ -32,11 +44,16 @@ vim.list_extend(ensure_installed, {
   'ts_ls',
   'lua_ls', --lua lsp
   'stylua', -- format lua
+<<<<<<< HEAD
   -- 'marksman', --markdown lsp
   -- 'markdown-oxide', --markdown lsp
-  -- 'gdtoolkit', -- format and lint gdscript
+})
+
+=======
+  'gdtoolkit', -- format and lint gdscript
+  'marksman', --markdown lsp
   -- 'markdown-oxide', --markdown lsp
-  -- 'ruff', --python lsp, formatter, and linter
+  'ruff', --python lsp, formatter, and linter
 })
 
 --add servers that don't get installed by mason
@@ -44,6 +61,7 @@ local additional_servers = {
   gdscript = {},
 }
 
+>>>>>>> develop
 return {
   -- Main LSP Configuration
   'neovim/nvim-lspconfig',
@@ -188,9 +206,12 @@ return {
       },
     }
 
+<<<<<<< HEAD
     -- Enable the following language servers
     --  Feel free to add/remove any LSPs that you want here. They will automatically be installed.
     --
+=======
+>>>>>>> develop
     --  Add any additional override configuration in the following tables. Available keys are:
     --  - cmd (table): Override the default command used to start the server
     --  - filetypes (table): Override the default list of associated filetypes for the server
@@ -214,6 +235,8 @@ return {
         end,
       },
     }
+<<<<<<< HEAD
+=======
 
     -- vim.lsp.enable 'gdscript'
     --setup servers that are not installed by Mason
@@ -232,5 +255,6 @@ return {
     --     vim.api.nvim_command('echo serverstart("127.0.0.1:' .. gdscriptPort .. '")')
     --   end,
     -- }
+>>>>>>> develop
   end,
 }

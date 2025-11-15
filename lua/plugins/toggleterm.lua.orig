@@ -13,13 +13,21 @@ return {
     {
       mode = { 'n' },
       '<leader>rx',
+<<<<<<< HEAD
+      '<cmd>2TermExec cmd="WsaClient /launch wsa://com.veracitygroupinc.versatrak & npx expo start --dev-client" direction=float<cr>',
+=======
       '<cmd>2TermExec cmd="npx expo start --dev-client" direction=float<cr>',
+>>>>>>> develop
       desc = 'run expo',
     },
     {
       mode = { 'n' },
       '<leader>rcx',
+<<<<<<< HEAD
+      '<cmd>2TermExec cmd="WsaClient /launch wsa://com.veracitygroupinc.versatrak & npx expo start --clear --dev-client" direction=float<cr>',
+=======
       '<cmd>2TermExec cmd="npx expo start --clear --dev-client" direction=float<cr>',
+>>>>>>> develop
       desc = 'run expo with cleared cache',
     },
     {

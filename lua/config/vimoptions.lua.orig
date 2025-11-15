@@ -80,4 +80,7 @@ vim.o.expandtab = false
 --to enable nvim-hightlight-colors, highlights color strings with their color in terminal
 vim.o.termguicolors = true
 
+<<<<<<< HEAD
+=======
 vim.o.foldlevelstart = 5
+>>>>>>> develop
